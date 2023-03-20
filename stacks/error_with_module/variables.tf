@@ -11,3 +11,11 @@ variable "instances" {
     key_name = string
   }))
 }
+
+variable "spot_instances" {
+  description = "List of spot instance meta-data objects"
+  type = list(object({
+    name     = string
+    key_name = string
+  }))
+}
